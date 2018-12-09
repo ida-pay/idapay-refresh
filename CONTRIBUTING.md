@@ -3,8 +3,9 @@ Contributing to IDAPay Core
 
 The IDAPay Core project operates an open contributor model where anyone is welcome to contribute towards development in the form of peer review, testing and patches. This document explains the practical process and guidelines for contributing.
 
-Firstly in terms of structure, there is no particular concept of “Core developers” in the sense of privileged people. Open source often naturally revolves around meritocracy where longer term contributors gain more trust from the developer community. However, some hierarchy is necessary for practical purposes. As such there are repository “maintainers” who are responsible for merging pull requests as well as a “lead maintainer” who is responsible for the release cycle, overall merging, moderation and appointment of maintainers.
+In terms of structure, there is no particular concept of “Core developers”; in the sense of privileged people. Open source often naturally revolves around meritocracy where longer term contributors gain more trust from the developer community. However, some hierarchy is necessary for practical purposes; as such there are "contributors" who are known contributors that issues or code reviews may be assigned to, and "administrators" who are responsible for appointing contributors, merging pull requests, and processing the release cycle. 
 
+This should not mean that you must be a known "contributor" to contribute, anyone may fork and pull merge requests.  Your participation in the community will quickly gain you official trusted "contributor" status.
 
 Contributor Workflow
 --------------------
@@ -13,9 +14,15 @@ The codebase is maintained using the “contributor workflow” where everyone w
 
 To contribute a patch, the workflow is as follows:
 
-  - Fork repository
-  - Create topic branch
-  - Commit patches
+  - Fork the main repository
+  - Create an [Issue](https://github.com/ida-pay/idapay-refresh/issues) describing what you are looking into
+  - Create a branch off your master fork.  One branch for each issue.
+  - Commit changes into your branch and test
+  - Submit pull request to merge back to the main parent repository
+  
+Please note that you should keep your master fork in synch with the parent master; and you should keep your master fork free of merges, so further branches aren't confused with your previous pulls into your master fork.  Pull requests to the master parent should include a description of what the change is, how it was tested, and what issue it is addressing.  The issue note should add a comment referencing the pull request.
+
+It is very important, for the ease of code review and merging; that branches and pull requests be limited in scope to a single issue, and not have multiple issues tied into the same PR.  This way they can be merged simpler and independantly.
 
 The project coding conventions in [doc/developer-notes.md](doc/developer-notes.md) must be adhered to.
 
