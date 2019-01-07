@@ -93,7 +93,6 @@ OptionsDialog::OptionsDialog(QWidget *parent, bool enableWallet) :
     
     /* Theme selector */
     ui->theme->addItem(QString("IDAPAY-light"), QVariant("light"));
-    ui->theme->addItem(QString("IDAPAY-light-hires"), QVariant("light-hires"));
     ui->theme->addItem(QString("IDAPAY-blue"), QVariant("drkblue"));
     ui->theme->addItem(QString("IDAPAY-Crownium"), QVariant("crownium"));
     ui->theme->addItem(QString("IDAPAY-traditional"), QVariant("trad"));
